@@ -1,0 +1,264 @@
+/* two.css */
+
+/* === global stuff === */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Helvetica Neue', Verdana, sans-serif;
+}
+
+
+/* === section colors === */
+
+
+header { background-color: #4799b7; }
+#shoutout { background-color: #eee; }
+#features { background-color: #ddd; }
+#compare { background-color: #eee; }
+#contact { background-color: #ddd; }
+footer { background-color: #4799b7; }
+
+
+/* === default responsive === */
+
+
+.jbr-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jbr-col {
+    margin-right: 20px;
+}
+
+.jbr-col:last-child {
+    margin-right: 0;
+}
+
+
+/* === page layout === */
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#top-row {
+    margin: 0 20px;
+}
+
+main {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    #top-row {
+        flex-direction: column;
+    }
+    #top-row > .jbr-col {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+/* === header === */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+
+/* === sections === */
+
+
+section {
+    padding: 2rem 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+
+/* === shoutout === */
+
+
+#shoutout .jbr-col {
+    width: 50%
+}
+
+@media only screen and (max-width: 500px) {
+    #shoutout .jbr-row {
+        flex-direction: column;
+    }
+    #shoutout .jbr-col {
+        width: 100%;
+        margin-right: 0;
+    }
+    #shoutout .jbr-col:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+#shoutout img {
+    height: auto;
+    max-width: 100%;
+}
+
+#shoutout {
+    font-size: 1.5rem;
+}
+
+
+/* === features === */
+
+
+#features .jbr-col {
+    width: 33%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    #features .jbr-row {
+        flex-direction: column;
+    }
+    #features .jbr-col {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+    
+#features h3 {
+    margin-bottom: .25em;
+}
+
+
+/* === compare === */
+
+
+#compare table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#compare td, #compare th {
+    text-align: center;
+}
+
+#compare th {
+    border-bottom: 2px solid #999;
+}
+
+#compare td {
+    padding-top: 10px;
+}
+
+
+/* === contact === */
+
+
+#contact .jbr-col-label {
+    width: 25%;
+    padding: 5px;
+}
+
+#contact .jbr-col-widget {
+    width: 75%;
+    padding: 5px;
+}
+
+#contact input {
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    #contact .jbr-row {
+        flex-direction: column;
+    }
+    #contact .jbr-col-label {
+        padding: 0;
+    }
+    #contact .jbr-col-widget {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+}
+
+
+/* === sidebar === */
+
+
+#sidebar {
+    width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    #sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.widget {
+    margin-bottom: 2em;
+}
+
+.widget:last-child {
+    margin-bottom: 0;
+}
+
+.widget h2 {
+    font-size: 1rem;
+    background-color: #6DB3BF;
+    margin-top: 0;
+    padding: 5px;
+}
+
+#news ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news li {
+    margin-bottom: 1em;
+}
+
+#news li:last-child {
+    margin-bottom: 0;
+}
+
+.advert {
+    margin-top: 1em;
+}
+
+.advert h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* === footer === */
+
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
